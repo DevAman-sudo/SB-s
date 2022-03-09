@@ -87,6 +87,35 @@ router.get('/designer', (req, res) => {
 
 })
 
+// accountant route ...
+router.get('/receptionist', (req, res) => {
+
+	res.status(200).render('receptionist')
+
+})
+
+// guard route ...
+router.get('/guard', (req, res) => {
+
+	res.status(200).render('guard')
+
+})
+
+// waiters route ...
+router.get('/waiters', (req, res) => {
+
+	res.status(200).render('waiter')
+
+})
+
+// salse girl route ...
+router.get('/salse', (req, res) => {
+
+	res.status(200).render('salse')
+
+})
+
+
 // apply post route ...
 router.post('/apply', (req, res) => {
 
