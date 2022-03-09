@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+     {{>head}}
+
+      <!-- Vendor CSS Files -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+          integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     {{>loader}}
+
+      {{!-- alerts --}}
+     {{#if message}}
+
+      <div class="flex flex-col m-auto mt-5 mb-5 w-3/4 p-8 bg-gray-800 shadow-md hover:shodow-lg rounded-2xl">
+               <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                         <svg xmlns="http://www.w3.org/2000/svg"
+                              class="w-16 h-16 rounded-2xl p-3 border border-gray-800 text-blue-400 bg-gray-900"
+                              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                         </svg>
+                         <div class="flex flex-col ml-3">
+                              <div class="font-medium leading-none text-gray-100">{{ message }}</div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     {{/if}}
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <img class="logo navbar-brand" src="./images/tree.png" alt="logo">
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li class="active"><a href="/">Home</a></li>
+                         <li><a href="/jobs">Jobs</a></li>
+                         <li><a href="/about">About Us</a></li>
+                         <li><a href="/contact">Contact Us</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+     <!-- HOME -->
+     <section id="home">
+          <div class="row">
+               <div class="owl-carousel owl-theme home-slider">
+                    <div class="item item-first">
+                         <div class="caption">
+                              <div class="container">
+                                   <div class="col-md-6 col-sm-12">
+                                        <h1 class="text-8xl" style="text-shadow: 7px 2px 6px rgb(12, 11, 11);">Access Hundred of
+                                             Executive Jobs across Kathmandu.</h1>
+                                        <a href="/jobs" class="section-btn btn btn-default">Browse Jobs</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="item item-second">
+                         <div class="caption">
+                              <div class="container">
+                                   <div class="col-md-6 col-sm-12">
+                                        <h1 class="text-8xl" style="text-shadow: 7px 2px 6px rgba(150, 150, 150, 1);">Forget the old
+                                             rules. You can find the best Jobs.
+                                             Right now. Right here.</h1>
+                                        <a href="/jobs" class="section-btn btn btn-default">Browse Jobs</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="item item-third">
+                         <div class="caption">
+                              <div class="container">
+                                   <div class="col-md-6 col-sm-12">
+                                        <h1 class="text-8xl" style="text-shadow: 7px 2px 6px rgb(12, 11, 11);">Thousands of new
+                                             jobs daily from Rs10,000 - Rs45,000</h1>
+                                        <a href="/jobs" class="section-btn btn btn-default">Browse Jobs</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <main>
+          <section>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 col-sm-12">
+                              <div class="text-center">
+                                   <h2>About us</h2>
+
+                                   <br>
+
+                                   <p class="lead">Hey, we are the SB's team of professionals trying to create
+                                        job opportunities for everyone inside Kathmandu valley. We are dedicated to
+                                        helping active employers and active job-seekers in the fastest way. We know
+                                        finding a job is tough, but Job Seekers make it easier than ever. We created a
+                                        platform Now you can apply for the job which you found best fit for you where
+                                        you can apply for the job, simply with one touch.<br>
+
+                                        “The job is what you do when you are told what to do. ...”</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          {{!-- jobs section --}}
+          {{>jobs}}
+
+     </main>
+
+     <!-- CONTACT -->
+     {{>contact}}
+
+     <!-- FOOTER -->
+     {{>footer}}
+
+     <!-- SCRIPTS -->
+     <script src="./js/jquery.js"></script>
+     <script src="./js/bootstrap.min.js"></script>
+     <script src="./js/owl.carousel.min.js"></script>
+     <script src="./js/smoothscroll.js"></script>
+     <script src="./js/custom.js"></script>
+
+</body>
+
+</html>
