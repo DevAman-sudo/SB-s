@@ -1,11 +1,18 @@
-
-
 // npm packages ...
-// let nodemailer = require('nodemailer');
+let nodemailer = require('nodemailer');
 
 // database ...
 const Jobs = require('../../../models/schema')
 
+
+// nodemailer transporter ...
+let transporter = nodemailer.createTransport({
+	service: "gmail",
+	auth: {
+		user: process.env.MAIL_USERNAME,
+		pass: process.env.MAIL_PASSWORD
+	},
+});
 
 
 function applyControllers() {
@@ -23,32 +30,32 @@ function applyControllers() {
                     jobs: req.body.jobs,
                     message: req.body.message,
                 });
-
+        
                 const registered = await registerJobs.save();
-
+        
             }
-
+        
             createDocument();
-
+        
             let mailOptions = {
                 from: "sbs.com.np@gmail.com",
                 to: "sbs.com.np@gmail.com",
                 subject: req.body.name,
                 text: `Name = ${req.body.name} ,
-                 Email = ${req.body.email} ,
-                  Number = ${req.body.number} , 
-                  Requested_Job = ${req.body.jobs} ,
-                  Message = ${req.body.message}`
+                         Email = ${req.body.email} ,
+                          Number = ${req.body.number} , 
+                          Requested_Job = ${req.body.jobs} ,
+                          Message = ${req.body.message}`
             };
-
+        
             transporter.sendMail(mailOptions, function (err, data) {
                 if (err) {
-                    res.render('index', { message: "Something Went Wrong Please Try Again" });
+                    res.redirect('/?msg=' + "Something Went Wrong Please Try Again");
                 } else {
-                    res.render('index', { message: "Thanks sir/mam , we've received your message" });
+                    res.redirect('/?msg=' + "Thanks sir/mam , we've received your message");
                 }
             });
-
+        
 
         }
 

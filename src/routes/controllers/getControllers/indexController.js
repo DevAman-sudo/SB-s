@@ -4,7 +4,7 @@ function indexControllers() {
 
         process(req, res) {
 
-            res.status(200).render('index')
+            res.status(200).render('index', {message: req.query.msg})
 
         }
 

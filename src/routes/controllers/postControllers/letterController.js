@@ -19,7 +19,7 @@ function letterControllers() {
 
             createDocument();
 
-            res.status(200).render('index', { message: "Congratulations you've successfully subscribed our NewsLetter" })
+            res.status(200).redirect('/?msg=' + "Congratulations you've successfully subscribed our NewsLetter")
 
 
         }
