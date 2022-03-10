@@ -5,13 +5,6 @@
 
      {{>head}}
 
-      <!-- Vendor CSS Files -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-          integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -68,49 +61,8 @@
           </div>
      </section>
 
-     <!-- HOME -->
-     <section id="home">
-          <div class="row">
-               <div class="owl-carousel owl-theme home-slider">
-                    <div class="item item-first">
-                         <div class="caption">
-                              <div class="container">
-                                   <div class="col-md-6 col-sm-12">
-                                        <h1 class="text-8xl" style="text-shadow: 7px 2px 6px rgb(12, 11, 11);">Access Hundred of
-                                             Executive Jobs across Kathmandu.</h1>
-                                        <a href="/jobs" class="section-btn btn btn-default">Browse Jobs</a>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="item item-second">
-                         <div class="caption">
-                              <div class="container">
-                                   <div class="col-md-6 col-sm-12">
-                                        <h1 class="text-8xl" style="text-shadow: 7px 2px 6px rgba(150, 150, 150, 1);">Forget the old
-                                             rules. You can find the best Jobs.
-                                             Right now. Right here.</h1>
-                                        <a href="/jobs" class="section-btn btn btn-default">Browse Jobs</a>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="item item-third">
-                         <div class="caption">
-                              <div class="container">
-                                   <div class="col-md-6 col-sm-12">
-                                        <h1 class="text-8xl" style="text-shadow: 7px 2px 6px rgb(12, 11, 11);">Thousands of new
-                                             jobs daily from Rs10,000 - Rs45,000</h1>
-                                        <a href="/jobs" class="section-btn btn btn-default">Browse Jobs</a>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
+     {{!-- slider --}}
+    {{>slider}}
 
      <main>
           <section>
@@ -118,7 +70,7 @@
                     <div class="row">
                          <div class="col-md-12 col-sm-12">
                               <div class="text-center">
-                                   <h2>About us</h2>
+                                   <h2 style="font-size: 5rem;">About us</h2>
 
                                    <br>
 
