@@ -8,7 +8,7 @@ const path = require('path');
 const hbs = require('hbs');
 const Routes = require('./routes/router'); // app routes ...
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 
 // file paths ...
 const staticPath = path.join(__dirname, '../public/');
@@ -27,7 +27,7 @@ app.use(express.static(staticPath));
 app.use(Routes);
 
 // mongodb connection ...
-mongoose.connect(`mongodb+srv://devaman:${process.env.PASS}@cluster0.bgpt2.mongodb.net/sbs?retryWrites=true&w=majority`,
+mongoose.connect(`mongodb+srv://devaman:${process.env.PASS}@cluster0.bgpt2.mongodb.net/sbsTest?retryWrites=true&w=majority`,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,

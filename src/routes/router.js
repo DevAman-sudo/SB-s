@@ -4,8 +4,12 @@ const path = require('path');
 const router = express();
 const mongoose = require('mongoose')
 const nodemailer = require('nodemailer')
+
+// database ...
 const Jobs = require('../models/schema');
 const NewsLetter = require('../models/newsLetter');
+
+// middlewares ...
 router.set('views', path.join(__dirname, '../../templates/views'));
 
 // nodemailer transporter ...
@@ -17,33 +21,22 @@ let transporter = nodemailer.createTransport({
 	},
 });
 
-// index route ...
-router.get('/', (req, res) => {
+// get controllers ...
+const indexControllers = require('./controllers/getControllers/indexController')
+const aboutControllers = require('./controllers/getControllers/aboutController')
+const jobsControllers = require('./controllers/getControllers/jobsController')
+const contactControllers = require('./controllers/getControllers/contactController')
 
-	res.status(200).render('index');
+// post controllers ...
+// const applyControllers = require('./controllers/postControllers/applyController')
+const letterControllers = require('./controllers/postControllers/letterController')
 
-});
+// get routes ...
+router.get('/', indexControllers().process)
+router.get('/about', aboutControllers().process)
+router.get('/jobs', jobsControllers().process)
+router.get('/contact', contactControllers().process)
 
-// about route ...
-router.get('/about', (req, res) => {
-
-	res.status(200).render('about')
-
-})
-
-// jobs route ...
-router.get('/jobs', (req, res) => {
-
-	res.status(200).render('jobs')
-
-})
-
-// contact route ...
-router.get('/contact', (req, res) => {
-
-	res.status(200).render('contact')
-
-})
 
 // jobs details route ...
 router.get('/details', (req, res) => {
@@ -115,7 +108,6 @@ router.get('/salse', (req, res) => {
 
 })
 
-
 // apply post route ...
 router.post('/apply', (req, res) => {
 
@@ -140,10 +132,10 @@ router.post('/apply', (req, res) => {
 		to: "sbs.com.np@gmail.com",
 		subject: req.body.name,
 		text: `Name = ${req.body.name} ,
-		 Email = ${req.body.email} ,
-		  Number = ${req.body.number} , 
-		  Requested_Job = ${req.body.jobs} ,
-		  Message = ${req.body.message}`
+                 Email = ${req.body.email} ,
+                  Number = ${req.body.number} , 
+                  Requested_Job = ${req.body.jobs} ,
+                  Message = ${req.body.message}`
 	};
 
 	transporter.sendMail(mailOptions, function (err, data) {
@@ -154,25 +146,13 @@ router.post('/apply', (req, res) => {
 		}
 	});
 
-})
-
-// newsletter post route ...
-router.post('/letter', (req, res) => {
-
-	const createDocument = async () => {
-
-		const registerNews = new NewsLetter({
-			email: req.body.email
-		});
-
-		const registered = await registerNews.save();
-
-	}
-
-	createDocument();
-
-	res.status(200).render('index' , { message: "Congratulations you've successfully subscribed our NewsLetter" })
 
 })
+
+
+
+// post routes ...
+// router.post('/apply', applyControllers().process)
+router.post('/letter', letterControllers().process)
 
 module.exports = router;
