@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Call Receivers",
+        "location": "Lagankhel",
+        "salary": "Rs 21,000",
+        "image": "call-receivers.png",
+        "note": "",
+        "description": "To give real service you must add something which cannot be bought or measured with money, and that is sincerity and integrity.",
+        "responsibillitites": "manage inbound and/or outbound calls;     follow various communication scripts when speaking to a caller;    handle customer engagement;    identify customer needs, answer questions and solve problems;   up-sell products and services when possible;"
+    },
+
+    {
+        "name": "Accountant",
+        "location": "Kathmandu",
+        "salary": "Rs 10,000 - Rs 27,000",
+        "image": "accountant.png",
+        "note": " Experience Required",
+        "description": "An Accountant helps businesses make critical financial decisions by collecting, tracking, and correcting the company's finances. They are responsible for financial audits, reconciling bank statements, and ensuring financial records are accurate throughout the year.",
+        "responsibillitites": "Preparing accounts and tax returns;    Monitoring spending and budgets;    Auditing and analysing financial performance;    Financial forecasting and risk analysis;    Advising on how to reduce costs and increase profits;    Compiling and presenting financial and budget reports."
+    },
+
+    {
+        "name": "Online Typing",
+        "location": "All Over Nepal",
+        "salary": "Rs5000 - Rs 24,500",
+        "image": "online.png",
+        "note": "Fresher`s can also Apply",
+        "description": "Fresher's can Apply",
+        "responsibillitites": ""
+    },
+
+    {
+        "name": "Cook $ Helpers",
+        "location": "Inside Valley",
+        "salary": "Rs22,000 - Rs 45,000",
+        "image": "cook.png",
+        "note": "",
+        "description": "A Cook plans, prepares, and cooks food items to ensure the highest quality service and experience for customers. They help keep the kitchen organized and running efficiently. They ensure proper food handling, sanitation and following food storage procedures.",
+        "responsibillitites": "Ensure ingredients and final products are fresh;    Follow recipes, including measuring, weighing and mixing ingredients;    Bake, grill, steam and boil meats, vegetables, fish, poultry and other foods;    Present, garnish and arrange final dishes;    Occasionally serve food."
+    },
+
+    {
+        "name": "Graphic Designer",
+        "location": " Kathmandu",
+        "salary": "Rs 29,000",
+        "image": "designer.png",
+        "note": "UI / UX designer",
+        "description": "Graphic designers create visual text and imagery concepts, by hand or using computer software, to communicate ideas that inspire, inform, or captivate consumers. They develop the overall layout and production design for advertisements, brochures, magazines, and corporate reports, etc.",
+        "responsibillitites": "liaising with clients to determine their requirements and budget;    managing client proposals from typesetting through to design, print and production;    working with clients, briefing and advising them with regard to design style, format, print production and timescales."
+    },
+
+    {
+        "name": "Receptionist",
+        "location": "Kathmandu",
+        "salary": "Rs 12,000 - Rs 16,000",
+        "image": "Receptionist.png",
+        "note": "Experience Required",
+        "description": "A Receptionist's duties and responsibilities include greeting visitors, helping them navigate through an office, and supplying them with refreshments as they wait. In addition, they maintain calendars for appointments, sort mail, make copies, and plan travel arrangements.",
+        "responsibillitites": ""
+    },
+
+    {
+        "name": "Security Guard",
+        "location": "Inside Valley",
+        "salary": "Rs 15,000 - Rs 25,000",
+        "image": "guard.png",
+        "note": "Experience Required",
+        "description": "Secures premises and personnel by patrolling property, monitoring surveillance equipment, and access points. Investigates security breaches, incidents, and other alarming behavior. Controls traffic by directing drivers. Completes reports by recording observations, information, occurrences, and surveillance activities.",
+        "responsibillitites": "Inspect and patrol premises regularly;    Monitor property entrance;    Authorize entrance of people and vehicles;    Report any suspicious behaviors and happenings;    Secure all exits, doors and windows;    Monitor surveillance cameras."
+    },
+
+    {
+        "name": "Waiters",
+        "location": "Kathmandu",
+        "salary": "Rs 8000 - Rs 14,000",
+        "image": "waiter.png",
+        "note": "Fresher can Apply",
+        "description": "The duties and responsibilities of a Waiter/Waitress include welcoming and seating guests, taking guest orders, communicating them effectively to the kitchen and in addition, memorizing the menu and offering recommendations to upsell appetizers, desserts, or drinks.",
+        "responsibillitites": "Greet and escort customers to their tables;    Present menu and provide detailed information when asked (e.g. about portions, ingredients or potential food allergies) Prepare tables by setting up linens, silverware and glasses;    Inform customers about the day's specials;    Offer menu recommendations upon request."
+    },
+
+    {
+        "name": "Salse Girl",
+        "location": "Lalitpur , Bhaktapur",
+        "salary": "Rs 12,000",
+        "image": "salse.png",
+        "note": "Fresher can Apply",
+        "description": "The salesperson is responsible for greeting customers, helping them find items in the store, and ringing up purchases. To be successful as a salesperson you must have excellent communication skills. A good salesperson meets sales objectives while remaining polite and helpful to customers.",
+        "responsibillitites": ""
+    },
+
+    {
+        "name": "Cashier",
+        "location": "Kathmandu",
+        "salary": "Rs 15,000",
+        "image": "cashier.png",
+        "note": "CV / Bio Data Required",
+        "description": "A Cashier, or Retail Cashier, is responsible for processing cash, debit, credit and check transactions using a cash register or other point-of-sale system in a retail environment. Their duties include balancing the cash register, making change, recording purchases, processing returns and scanning items for sale.",
+        "responsibillitites": "Cashier responsibilities include receiving payments and issuing receipts, gift-wrapping packages and keeping track of all cash and credit transactions. To be successful in this role, you should have previous experience in a customer service position and good knowledge of how cash registers operate."
+    }
+
+]

@@ -12,6 +12,7 @@ const port = process.env.PORT || 5000;
 
 // file paths ...
 const staticPath = path.join(__dirname, '../public/');
+const cssPath = path.join(__dirname, '../public/css');
 const viewsPath = path.join(__dirname, '../templates/views/');
 const partialsPath = path.join(__dirname, '../templates/partials/');
 
@@ -25,6 +26,7 @@ app.use(cookieParser());
 hbs.registerPartials(partialsPath);
 app.use(express.static(staticPath));
 app.use(Routes);
+app.use(express.static(cssPath))
 
 // mongodb connection ...
 mongoose.connect(`mongodb+srv://devaman:${process.env.PASS}@cluster0.bgpt2.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,

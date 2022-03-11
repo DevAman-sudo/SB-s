@@ -1,10 +1,16 @@
+// database ...
+const async = require('hbs/lib/async')
+const JobsApi = require('./../../../models/jobsApi')
+
+
 function jobsControllers() {
 
     return {
 
-        process(req, res) {
+        async process (req, res) {
 
-            res.status(200).render('jobs')
+            let data = await JobsApi.find()
+            res.status(200).render('jobs', {jobsApi: data})
 
         }
 

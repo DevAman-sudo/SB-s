@@ -12,24 +12,24 @@
      <!-- PRE LOADER -->
      {{>loader}}
 
-      {{!-- alerts --}}
+     {{!-- alerts --}}
      {{#if message}}
 
-      <div class="flex flex-col m-auto mt-5 mb-5 w-3/4 p-8 bg-gray-800 shadow-md hover:shodow-lg rounded-2xl">
-               <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                         <svg xmlns="http://www.w3.org/2000/svg"
-                              class="w-16 h-16 rounded-2xl p-3 border border-gray-800 text-blue-400 bg-gray-900"
-                              fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                         </svg>
-                         <div class="flex flex-col ml-3">
-                              <div class="font-medium leading-none text-gray-100">{{ message }}</div>
-                         </div>
+     <div class="flex flex-col m-auto mt-5 mb-5 w-3/4 p-8 bg-gray-800 shadow-md hover:shodow-lg rounded-2xl">
+          <div class="flex items-center justify-between">
+               <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         class="w-16 h-16 rounded-2xl p-3 border border-gray-800 text-blue-400 bg-gray-900" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div class="flex flex-col ml-3">
+                         <div class="font-medium leading-none text-gray-100">{{ message }}</div>
                     </div>
                </div>
           </div>
+     </div>
 
      {{/if}}
 
@@ -62,7 +62,7 @@
      </section>
 
      {{!-- slider --}}
-    {{>slider}}
+     {{>slider}}
 
      <main>
           <section>
@@ -89,7 +89,10 @@
           </section>
 
           {{!-- jobs section --}}
-          {{>jobs}}
+          {{>jobsData}}
+          <div class="courses-info">
+               <a href="/jobs" class="section-btn btn btn-primary btn-block text-3xl">Browse More Jobs</a>
+          </div>
 
      </main>
 
