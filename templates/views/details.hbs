@@ -32,9 +32,9 @@
 
                     <div class="col-lg-9 col-md-9 col-xs-12">
                          <form action="#" method="post" class="form">
-                              <h2>{{ name }}</h2>
+                              <h2 data-aos="fade-up">{{ name }}</h2>
 
-                              <p class="lead"><strong class="text-primary">{{ salary }}</strong> <small> per
+                              <p data-aos="fade-upS" class="lead"><strong class="text-primary">{{ salary }}</strong> <small> per
                                         year</small></p>
 
                               <p class="lead">
@@ -82,12 +82,9 @@
      <!-- FOOTER -->
      {{>footer}}
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+   {{!-- javascript --}}
+    {{>js}}
+
 
 </body>
 

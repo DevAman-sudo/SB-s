@@ -66,7 +66,7 @@
 
      <main>
           <section>
-               <div class="container">
+               <div class="container" data-aos="fade-up">
                     <div class="row">
                          <div class="col-md-12 col-sm-12">
                               <div class="text-center">
@@ -90,8 +90,8 @@
 
           {{!-- jobs section --}}
           {{>jobsData}}
-          <div class="courses-info">
-               <a href="/jobs" class="section-btn btn btn-primary btn-block text-3xl">Browse More Jobs</a>
+          <div style="background-color: #f9f9f9;" class="courses-info">
+               <a href="/jobs" class="section-btn btn btn-primary btn-block text-3xl mb-5">Browse More Jobs</a>
           </div>
 
      </main>
@@ -102,12 +102,8 @@
      <!-- FOOTER -->
      {{>footer}}
 
-     <!-- SCRIPTS -->
-     <script src="./js/jquery.js"></script>
-     <script src="./js/bootstrap.min.js"></script>
-     <script src="./js/owl.carousel.min.js"></script>
-     <script src="./js/smoothscroll.js"></script>
-     <script src="./js/custom.js"></script>
+    {{!-- javascript --}}
+    {{>js}}
 
 </body>
 
