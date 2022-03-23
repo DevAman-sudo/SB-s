@@ -7,7 +7,7 @@ anime({
 
 anime({
     targets: '.slide',
-    translateX: 10,
+    translateY: 10,
     opacity: [0, 1],
     easing: "linear",
     duration: 3000

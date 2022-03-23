@@ -8,7 +8,7 @@ const path = require('path');
 const hbs = require('hbs');
 const Routes = require('./routes/router'); // app routes ...
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 // file paths ...
 const staticPath = path.join(__dirname, '../public/');

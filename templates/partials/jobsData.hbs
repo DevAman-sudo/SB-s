@@ -10,7 +10,7 @@
 
             {{#each jobsApi }}
 
-            <div data-aos="flip-left" data-aos-duration="2000" class="col-md-4 col-sm-4">
+            <div data-aos="fade-up" data-aos-duration="2000" class="col-md-4 col-sm-4">
                 <div class="courses-thumb courses-thumb-secondary">
                     <div class="courses-top">
                         <div class="courses-image">
@@ -29,17 +29,19 @@
 
                         <p> {{ this.location }} </p>
                         <br>
-                        <strong> 🥰 {{ this.note }} </strong>
+                        <div class="stage">
+                            <div class="heart"></div>
+                        </div> <br> <strong> {{ this.note }} </strong>
                     </div>
 
                     <div class="courses-info">
 
-                            <form action="/jobs/details" method="post">
+                        <form action="/jobs/details" method="post">
 
                             <input type="hidden" name="id" value="{{this.id}}">
                             <button type="submit" class="section-btn btn btn-primary btn-block">View Details</button>
 
-                            </form>
+                        </form>
 
 
                     </div>
