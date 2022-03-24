@@ -27,8 +27,7 @@ https://templatemo.com/tm-516-known
   }
 
   .logo { 
-    width: 10rem;
-    height: auto;
+    /* font-size: medium; */
   }
 
   h1 {
@@ -286,8 +285,8 @@ https://templatemo.com/tm-516-known
   }
 
   .custom-navbar .navbar-brand {
-    color: #454545;
-    font-size: 18px;
+    width: 15rem;
+    height: auto;
     font-weight: bold;
     line-height: 40px;
   }
