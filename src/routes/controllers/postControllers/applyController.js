@@ -27,6 +27,7 @@ function applyControllers() {
                     name: req.body.name,
                     email: req.body.email,
                     number: req.body.number,
+                    location: req.body.location,
                     jobs: req.body.jobs,
                     message: req.body.message,
                 });
@@ -44,6 +45,7 @@ function applyControllers() {
                 text: `Name = ${req.body.name} ,
                          Email = ${req.body.email} ,
                           Number = ${req.body.number} , 
+                          Location = ${req.body.location},
                           Requested_Job = ${req.body.jobs} ,
                           Message = ${req.body.message}`
             };
