@@ -107,6 +107,16 @@
         "note": "licence Required",
         "description": "",
         "responsibillitites": "A rider's job is to maintain a specific route or area to collect or deliver packages. They often used bicycles or motorcycles to perform their duties. Their duties and responsibilities include writing logs and reports, collecting payment for deliveries, and informing customers of new products and services."
+    },
+
+    {
+        "name": "Lab Assistants",
+        "location": "Kathmandu",
+        "salary": "Rs 15,000 - Rs 22,000",
+        "image": "lab.png",
+        "note": "Releated in this Field can Apply",
+        "description": "Lab assistants are responsible for helping technologists and scientists during lab tests and research. These highly-analytical professionals' possess in-depth knowledge of basic laboratory techniques and equipment. Their duties include processing samples, classifying results, and recording findings.",
+        "responsibillitites": "Lab Assistant responsibilities include: Performing laboratory tests including pre- and post-analytic phases. Preparing samples/specimens. Producing accurate and reliable data and interpret results."
     }
 
 ] 
