@@ -23,6 +23,7 @@ const detailsControllers = require('./controllers/getControllers/detailsControll
 const applyControllers = require('./controllers/postControllers/applyController')
 const letterControllers = require('./controllers/postControllers/letterController')
 const jobDetailsControllers = require('./controllers/postControllers/jobDetailsController')
+const jobIdControllers = require('./controllers/postControllers/jobIdController')
 
 // api controllers ...
 const jobsApiControllers = require('./controllers/apiControllers/jobsApiController')
@@ -40,6 +41,7 @@ router.get('/details', detailsControllers().process)
 router.post('/apply', applyControllers().process)
 router.post('/letter', letterControllers().process)
 router.post('/jobs/details', jobDetailsControllers().process)
+router.post('/jobid', jobIdControllers().process)
 
 // api routes ...
 router.get('/jobs-api', jobsApi().process)

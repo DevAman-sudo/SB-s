@@ -11,6 +11,7 @@ function detailsControllers() {
             // console.log(data.name)
             res.render('details', {
 
+                id : req.query.job_id,
                 name: data.name,
                 image: data.image,
                 salary: data.salary,

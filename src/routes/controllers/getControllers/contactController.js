@@ -1,10 +1,16 @@
+const JobsApi = require('./../../../models/jobsApi')
+
 function contactControllers() {
 
     return {
 
-        process(req, res) {
+        async process (req, res) {
 
-            res.status(200).render('contact')
+            const data = await JobsApi.findOne({ _id: req.query.job_id })
+
+            res.status(200).render('contact', {
+                name: data.name
+            })
 
         }
 

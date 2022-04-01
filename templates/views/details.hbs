@@ -34,7 +34,8 @@
                          <form action="#" method="post" class="form">
                               <h2 data-aos="fade-up">{{ name }}</h2>
 
-                              <p data-aos="fade-upS" class="lead"><strong class="text-primary">{{ salary }}</strong> <small> per
+                              <p data-aos="fade-upS" class="lead"><strong class="text-primary">{{ salary }}</strong>
+                                   <small> per
                                         month</small></p>
 
                               <p class="lead">
@@ -70,7 +71,11 @@
 
 
                <div class="clearfix">
-                    <a href="/contact" class="section-btn btn btn-primary pull-left">Apply for this job</a>
+                    <form action="/jobid" method="post">
+                         <input name="id" type="hidden" value="{{ id }}">
+                         <button class="section-btn btn btn-primary pull-left" type="submit">Apply for this job</button>
+                    </form>
+                    {{!-- <a href="/contact" class="section-btn btn btn-primary pull-left">Apply for this job</a> --}}
 
                     {{>socialR}}
 
@@ -82,8 +87,8 @@
      <!-- FOOTER -->
      {{>footer}}
 
-   {{!-- javascript --}}
-    {{>js}}
+     {{!-- javascript --}}
+     {{>js}}
 
 
 </body>
