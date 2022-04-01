@@ -2,7 +2,7 @@ anime({
     targets: '.pop',
     opacity: [0, 1],
     easing: "linear",
-    duration: 3000
+    duration: 2000
 });
 
 anime({
@@ -10,5 +10,5 @@ anime({
     translateY: 10,
     opacity: [0, 1],
     easing: "linear",
-    duration: 3000
+    duration: 2000
 });
