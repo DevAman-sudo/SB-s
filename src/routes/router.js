@@ -18,6 +18,7 @@ const aboutControllers = require('./controllers/getControllers/aboutController')
 const jobsControllers = require('./controllers/getControllers/jobsController')
 const contactControllers = require('./controllers/getControllers/contactController')
 const detailsControllers = require('./controllers/getControllers/detailsController')
+const notFoundControllers = require('./controllers/getControllers/notFoundController')
 
 // post controllers ...
 const applyControllers = require('./controllers/postControllers/applyController')
@@ -35,6 +36,7 @@ router.get('/about', aboutControllers().process)
 router.get('/jobs', jobsControllers().process)
 router.get('/contact', contactControllers().process)
 router.get('/details', detailsControllers().process)
+router.get('*', notFoundControllers().process)
 
 
 // post routes ...
