@@ -19,6 +19,7 @@ function detailsControllers() {
                 location: data.location,
                 description: data.description,
                 responsibillitites: data.responsibillitites 
+                
 
             })
 
